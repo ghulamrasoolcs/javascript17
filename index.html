@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignmet 17</title>
+  <style>
+    h1 {
+      text-align: center;
+      color: rgb(46, 84, 9);
+    }
+
+    body {
+      background-color: rgb(115, 146, 203);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>JavaScript Assignmet # 17</h1>
+  <h4>Task 1:</h4>
+  <p>Write a program using a for loop and print the numbers from 200 till 0 with the decrement of 3.</p>
+  <h5>Answer:</h5>
+  <pre><code>for (var i = 200; i >= 0; i -= 3);
+console.log(i);
+</code></pre>
+
+  <h4>Task 2:</h4>
+  <p>Write a program to display your name 10 times using a while loop.</p>
+  <h5>Answer:</h5>
+  <pre><code>var i = 1;
+while (i < 11) {
+    console.log("Ghulam Rasool");
+    i++;
+  }</code></pre>
+
+  <h4>Task 3:</h4>
+  <p>Write a program to print a sum of even numbers in between 1-10 using a while loop.</p>
+  <h5>Answer:</h5>
+  <pre><code>var a = 0;
+var n = 1;
+
+while (n <= 10) {
+    if (n % 2 == 0) {
+      a = a + n;
+    }
+    n++
+  }
+console.log("Sum of 1 to 10 even numbers is ", a);
+
+</code></pre>
+
+  <h4>Task 4:</h4>
+  <p>Write a program to display a number between 1 to 5 using the do while loop.</p>
+  <h5>Answer:</h5>
+  <pre><code>var i = 1;
+  do {
+    console.log(i)
+    i++;
+  } while (i <= 5);</code></pre>
+
+  <h4>Task 5:</h4>
+  <p>Write a function to print the sum of two numbers.</p>
+  <h5>Answer:</h5>
+  <pre><code>function sum(a, b) {
+  console.log(a + b)
+}
+sum(3, 4)
+sum(4, 9)
+</code></pre>
+
+  <h4>Task 6:</h4>
+  <p>Invoke a function and pass values to the ‘width’ & ‘height’ parameters inside the
+    parenthesis store the return value in a variable ‘Area’ and print it in the console.
+  </p>
+  <h5>Answer:</h5>
+  <pre><code>function Area(width, height) {
+    area = height * width;
+    console.log("Area is: ", area)
+}
+let width = prompt("Enter the width...")
+let height = prompt("Enter the height...")
+Area(width, height)
+Area(6, 8)</code></pre>
+
+<hr>
+<hr>
+
+  <script>
+
+    console.log("Q#1")
+    for (var i = 200; i >= 0; i -= 3)
+      console.log(i);
+
+    console.log("Q#2")
+    var i = 1;
+    while (i < 11) {
+      console.log("Ghulam Rasool");
+      i++;
+    }
+
+
+    console.log("Q#3")
+    var a = 0;
+    var n = 1;
+    while (n <= 10) {
+
+      if (n % 2 == 0) {
+        a = a + n;
+      }
+      n++
+    }
+    console.log("Sum of 1 to 10 even numbers is ", a);
+
+
+    console.log("Q#4")
+    i = 1;
+    do {
+      console.log(i)
+      i++;
+    } while (i <= 5);
+
+    console.log("Q#5")
+    function sum(a, b) {
+      console.log("Sum of two Numbers is: ", a + b)
+    }
+    sum(3, 4)
+    sum(4, 9)
+
+
+    console.log("Q#6")
+    function Area(width, height) {
+      area = height * width;
+      console.log("Area is: ", area)
+    }
+    // let width = prompt("Enter the width...")
+    // let height = prompt("Enter the height...")
+    // Area(width, height)
+    Area(6, 8)
+  </script>
+</body>
+
+</html>
